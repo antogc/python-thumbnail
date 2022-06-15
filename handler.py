@@ -115,6 +115,7 @@ def s3_get_thumbnail_urls(event, context):
         'headers': {'Content-Type': 'application/json'},
         'body': json.dumps(data)
     }
+
 def s3_get_item(event, context):
 
     table = dynamodb.Table(dbtable)
